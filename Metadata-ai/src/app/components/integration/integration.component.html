@@ -1,0 +1,16 @@
+<div class="Centered-content">
+    <div class="web">
+        <h1><strong>We showcase and distribute outcomes across various platforms</strong></h1>
+        <h5>We prioritize seamless sharing for your convenience.</h5>
+        <img src="assets/cloud.png" alt="">
+        <h4>Pose Your Queries Anytime, Anywhere</h4>
+    </div>
+    <div class="services container" *ngFor="let tool of dataAnalyticsTools">
+    <div class="name-tag row">
+        <h6>{{tool.tagLine}}</h6>
+    </div>
+    <div class="tool row">
+        <img class="col-xs-4" src="{{logo}}" alt="" *ngFor="let logo of tool.logos">
+    </div>
+</div>
+</div>

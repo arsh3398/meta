@@ -1,0 +1,22 @@
+<div class="timeline-section" *ngFor="let cloudItnstance of cloudSection; let indexElement = index;">
+  <div class="timeline-element container">
+    <div class="counter-section">
+      <div class="pseudo-icon">
+        <strong>{{ indexElement+1 }}</strong>
+      </div>
+    </div>
+    <div class="timeline-content row">
+      <div class="timeline-right col-6">
+        <div class="content-element">
+          <img class="lazy-load-image" loading="lazy" src="{{cloudItnstance.cloudImg}}" alt="" />
+        </div>
+      </div>
+      <div class="timeline-left col-6">
+        <div class="content-element-text">
+          <h1><strong>{{cloudItnstance.cloudDesc}}</strong></h1>
+          <h1>{{cloudItnstance.cloudtag}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

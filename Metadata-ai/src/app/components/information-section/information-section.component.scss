@@ -1,0 +1,26 @@
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-body{
+        text-align: center;
+    }
+    img{
+    width: 20%;
+    margin: 10px 10px;
+    text-align: center;
+}}
+
+.information{
+    padding: 100px 70px;
+}
+
+.card-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    border: 0px;
+}

@@ -1,0 +1,47 @@
+.client-section{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.description{
+    font-family: 'Montserrat', 'sans-serif';
+    padding: 10px 10px;
+    text-align: center;
+    
+}
+
+.description h4{
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(173, 173, 173);
+    
+}
+
+.clients {
+    width: 50%;
+    text-align: center;
+    .icons {
+      .boxes {
+        display: flex;
+        justify-content: center;
+        img {
+          margin: 5px 5px;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:575px) {
+    .clients {
+      .icons {
+        .boxes {
+          img {
+            margin: 20px 5px;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,90 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  font-family: Montserrat, sans-serif;
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    text-align: left;
+
+    strong {
+      h1 {
+        font-size: 65px;
+      }
+    }
+  }
+
+  .team-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+  .clients {
+    width: 50%;
+    text-align: center;
+    .icons {
+      .boxes {
+        display: flex;
+        justify-content: center;
+        img {
+          margin: 5px 5px;
+          width: 90%;
+        }
+      }
+    }
+  }
+  .demo-section {
+    display: flex;
+    justify-content: center;
+    .demo {
+      padding: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: white;
+      border-radius: 20px;
+      background-color: #183153;
+      width: 80%;
+      button {
+        border: 0px;
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .about-us {
+    .row{
+      display: flex;
+      justify-content: center;
+      .text-content {
+        width: 70%;
+        text-align: center;
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      strong {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+    }
+  }
+}

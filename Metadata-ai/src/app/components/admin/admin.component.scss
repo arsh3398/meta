@@ -1,0 +1,44 @@
+.admin {
+    margin-top: 100px;
+
+    .sections {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+
+        .effect {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 5px;
+            width: fit-content;
+            cursor: pointer;
+            position: relative;
+
+            img {
+                opacity: 0.8;
+                border-radius: 20px;
+                z-index: -1;
+            }
+
+            h4 {
+                position: absolute;
+                /* Position the <h4> element absolutely */
+                top: 0;
+                /* Place it at the top of the container */
+                left: 2%;
+                /* Place it at the left of the container */
+                background-color: rgba(255, 255, 255, 0.671);
+                // background-color: transparent;
+                /* Optionally, add a background color to make it more visible */
+                padding: 10px;
+                /* Optionally, add some padding to the <h4> element */
+            }
+        }
+    }
+}
+
+.effect:hover {
+    scale: 1.2;
+    transition: 600ms ease-in-out;
+}

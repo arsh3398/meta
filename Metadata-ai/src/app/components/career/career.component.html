@@ -1,0 +1,113 @@
+<div [ngStyle]="isActive==true? styleBackground : null">
+<div class="career">
+  <div class="introduction">
+    <div class="container">
+      <div class="row top-layer">
+        <div class="left-column col-md-6">
+          <h1>Take your career to new heights</h1>
+          <h4>We think you'll love it here</h4>
+          <button>see all positions</button>
+        </div>
+        <div class="right-column col-md-6">
+          <img src="assets/career.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-section">
+    <div class="content container">
+      <h6>WANT A TEAM? US TOO :)</h6>
+      <strong>
+        <h1>
+          MetadatAI is designed to cater to individuals who possess curiosity,
+          determination, creativity, and exceptional problem-solving skills.
+        </h1>
+      </strong>
+      <p>
+        We revolutionized the manner in which enterprises engage with their data
+        and are in the process of redefining the principles of data analytics.
+        The solutions we develop at this establishment assist our clients in
+        pursuing their business objectives with an astonishingly seamless
+        approach. We're addressing tangible business challenges and generating
+        substantial influence on our clients' financial outcomes. MetadataAI is
+        tailored for those who possess curiosity, determination, creativity, and
+        exceptional problem-solving abilities. If this resonates with you and
+        you're interested in forging a career where your contributions truly
+        matter, initiate a dialogue with us.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="postings">
+  <div class="department container">We are in search of</div>
+  <div class="row jobs" *ngFor="let i of [1, 2, 3]">
+    <div class="col-md-5 job-description" *ngFor="let j of [1, 2]">
+      <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+      </ul>
+      <a (click)="displayChange()">Apply Now</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="career-form" [ngStyle]="isActive == true ? styles : null">
+  <div class="note">
+    <strong><h1><img src="assets/apply.png" alt=""></h1></strong>
+  <a (click)="closeForm()"><fa-icon [icon]="icon"></fa-icon></a>
+  </div>
+  <form [formGroup]="CareerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="inputEmail4">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="First name"
+        formControlName="firstName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="inputEmail4">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Last name"
+        formControlName="lastName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        formControlName="email"
+      />
+    </div>
+    <re-captcha
+      (resolved)="checkCaptcha($event)"
+      formControlName="recaptchaReactive"
+      siteKey="6LeeG48oAAAAADSk0KEQHYdonpKzO5wMx8qRw8cT"
+    >
+    <!-- <re-captcha
+      (resolved)="checkCaptcha($event)"
+      formControlName="recaptchaReactive"
+      siteKey="6LcOvUIoAAAAACDmdg2iI-GRlOkXqO--HAFfaoiX"
+    > -->
+    </re-captcha>
+    <div class="form-group centered">
+      <button
+        [disabled]="!captchaResolved"
+        type="submit"
+        class="btn btn-primary"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

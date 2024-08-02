@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="contacts-us">
+        <div class="row introduction-text">
+            <div class="col-12">
+                <h1>Need help with Metadata-Ai?</h1>
+                <h4>Contact Us</h4>
+            </div>
+        </div>
+        <div class="row form-area">
+            <div class="col-md-6 questions">
+                <h5>Have queries about:</h5>
+                <ol>
+                    <li>What technologies and tools does we use?</li>
+                    <li>What is the team composition and expertise?</li>
+                    <li>How does the firm approach data privacy and security?</li>
+                    <li> Consultation on Data Strategy</li>
+                    <li>Hosting Press Inquiries</li>
+                </ol>
+                <h5>Please contact us</h5>
+            </div>
+            <div class="col-md-6 form-field">
+                <div class="contact-form">
+                        <div class="logo"><img src="assets/logo.png" alt=""></div>
+                        <form [formGroup]="ContactsForm" (ngSubmit)="onSubmit()">
+                            <div class="form-row row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First name"
+                                        formControlName="firstName">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last name"
+                                        formControlName="lastName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+                            </div>
+                            <div class="form-row row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputAddress">Want As</label>
+                                    <select id="inputState" class="form-control" formControlName="wantAs">
+                                        <option selected>Choose...</option>
+                                        <option value="Partner">Partner</option>
+                                        <option value="Student">Student</option>
+                                        <option value="Bussiness">Bussiness</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Phone Number</label>
+                                    <input type="number" class="form-control" placeholder="Ph.Number"
+                                        formControlName="phoneNumber">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

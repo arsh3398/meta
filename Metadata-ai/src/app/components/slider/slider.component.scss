@@ -1,0 +1,27 @@
+.slider{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 70px;
+    h4{
+        color: grey;
+        font-weight: 400;
+    }
+    .ipad{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        img{
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .slider{
+        .ipad{
+            img{
+                width: 100%;
+            }
+    }
+    }
+}

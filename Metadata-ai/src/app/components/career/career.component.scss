@@ -1,0 +1,223 @@
+.career {
+  margin-top: 98px;
+  filter: blur(0px);
+
+  .introduction {
+    margin: 0px 0px;
+
+    .top-layer {
+      .left-column {
+        padding: 00px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(10, 10, 10);
+
+        h1 {
+          font-size: 50px;
+          font-weight: 900;
+        }
+
+        button {
+          font-size: 20px;
+          font-weight: 200;
+          border: 1px solid rgb(0, 0, 0);
+          color: rgb(0, 0, 0);
+          background: transparent;
+          width: fit-content;
+        }
+      }
+
+      .right-column {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+
+    .content {
+      h6 {
+        color: grey;
+        text-align: center;
+      }
+
+      strong {
+        h1 {
+          text-align: center;
+          font-size: 50px;
+          font-weight: 900;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.postings {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+
+  .department {
+    background: rgb(184, 245, 179);
+    background: linear-gradient(225deg,
+        rgba(184, 245, 179, 1) 3%,
+        rgba(226, 235, 114, 1) 100%);
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .jobs {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    padding: 0px 0px;
+    gap: 20px;
+
+    .job-description {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      padding: 40px 40px;
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        margin: 10px 0px;
+        font-size: 25px;
+      }
+
+      ul {
+        padding: 0px;
+
+        li {
+          list-style: none;
+          font-size: 20px;
+        }
+      }
+
+      a {
+        background-color: rgb(165, 233, 145);
+        width: fit-content;
+        display: block;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        padding: 7px 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .career {
+    .introduction {
+      .top-layer {
+        .left-column {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h1 {
+            font-size: 30px;
+            font-weight: 600;
+          }
+
+          button {
+            font-size: 15px;
+            font-weight: 200;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .career {
+    .text-section {
+      .content {
+        strong {
+          h1 {
+            font-size: 40px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .introduction {
+    .top-layer {
+      .left-column {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.postings {
+  .department {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.career-form{
+  background: url(~src/assets/careerback.png) no-repeat center;
+  background-size: 95%;
+  padding: 20px;
+  display: none;
+  height: 91.5vh;
+  background-color: white;
+  position: fixed;
+  right: 0px;
+  top: 81px;
+  .note{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  .form-group{
+    margin: 10px 10px;
+  }
+  button{
+    margin: 10px 10px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .career-form{
+    top: 70px;
+  }
+}
+

@@ -1,0 +1,41 @@
+<div class="navbar-4">
+  <div class="container-4">
+    <div class="nav-block-left">
+      <a href="/" class="brand"><img src="assets/logo.png" alt="" /></a>
+      <nav class="nav-left-menu">
+        <a (click)="openLink()" class="nav-link"
+          ><strong class="bold-text-24">CHATGPT</strong></a
+        >
+        <a href="" class="nav-link"
+          >Career <strong class="data-track"><br /></strong
+        ></a>
+        <a href="" class="nav-link">
+          <strong class="resource-text">CDS Resources</strong>
+          <span class="text-span-15">&nbsp;🚀</span>
+          <strong><br /></strong>
+        </a>
+      </nav>
+    </div>
+    <div class="nav-block-right">
+      <a href="/" class="Demo-button">Request Demo</a>
+      <div class="menu-button">
+        <i class="fa-solid fa-bars" (click)="dropdown()"></i>
+      </div>
+    </div>
+  </div>
+  <div class="nav-overlay">
+    <div @myInsertRemoveTrigger *ngIf="isShowDiv" class="collect-nav">
+      <a href="" class="nav-link-overlay"
+        ><strong class="bold-text-24">CHATGPT</strong></a
+      >
+      <a href="" class="nav-link-overlay"
+        >Career <strong class="data-track"><br /></strong
+      ></a>
+      <a href="" class="nav-link-overlay">
+        <strong class="resource-text">CDS RESOURCES</strong>
+        <span class="roc-emoji">🚀</span>
+        <strong><br /></strong>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="table queryTable">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Last</th>
+                <th scope="col">Email</th>
+                <th scope="col">Wants As</th>
+                <th scope="col">Ph.no.</th>
+                <th scope="col">Action</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let query of contactedArray; let indexElement = index">
+                <th scope="row">{{indexElement+1}}</th>
+                <th scope="row">{{query.firstName}}</th>
+                <th scope="row">{{query.lastName}}</th>
+                <th scope="row">{{query.email}}</th>
+                <th scope="row">{{query.wantAs}}</th>
+                <th scope="row">{{query.phoneNumber}}</th>
+                <th scope="row">Action</th>
+              </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,38 @@
+.demo-section {
+    font-family: "Montserrat", sans-serif;
+    h1{
+        text-align: center;
+    }
+    .lower-content {
+        padding: auto;
+        display: flex;
+        align-items: center;
+        .left-information {
+            text-align: center;
+            margin: 20px 0px;
+            span {
+                margin-right: 50px;
+                font-weight: 600;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .right-video{
+        border: 2px black solid;
+        width: fit-content;
+        padding: 0px;
+        vg-player{
+            // width: 850px;
+            // height: 500px;
+            z-index: 0;
+        }
+    }
+}
+
+@media screen and (max-width:1390px) {
+
+}
